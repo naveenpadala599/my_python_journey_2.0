@@ -1,0 +1,12 @@
+import cmath
+
+n = complex(
+    int(input("Enter real part of the complex number: ")),
+    int(input("Enter imaginary part of the complex number: "))
+)
+
+nsqrt = cmath.sqrt(n)
+
+print("The complex number is %s." % str(n))
+print("The square root is %s." % str(nsqrt))
+print("The square root of %s is %.2f + %.2fj." % (str(n), nsqrt.real, nsqrt.imag))
