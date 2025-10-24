@@ -1,0 +1,7 @@
+def area(h, b):
+    a=h*b/2
+    return a
+h1=float(input("Enter the height of the triangle: "))
+b1=float(input("Enter the base of the triangle: "))    
+    
+print(f"The area of triangle is {area(h1,b1)}") 
