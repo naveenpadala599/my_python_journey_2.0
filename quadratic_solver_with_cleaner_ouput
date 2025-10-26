@@ -1,0 +1,13 @@
+import cmath
+a = float(input("Enter the number 'a': "))
+b = float(input("Enter the number 'b': "))
+c = float(input("Enter the number 'c': "))
+sol1 = (-b+cmath.sqrt(b*b-4*a*c))/(2*a)
+sol2 = (-b-cmath.sqrt(b*b-4*a*c))/(2*a)
+def real_or_complex(z):
+    if abs(z.imag)<=1e-2:
+        return f"{z.real:.2f}"
+    else:
+        return f"{z.real} + {z.imag}j"
+        
+print(f"The solution of the given qudratic equation is {real_or_complex(sol1)} and {real_or_complex(sol2)}")
