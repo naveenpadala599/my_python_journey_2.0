@@ -1,0 +1,9 @@
+x = int(input("Enter the value of x: "))
+y = int(input("Enter the value of y: "))
+print("The following are the values before swaping.")
+print(f"x = {x}")
+print(f"y = {y}")
+x, y = y, x
+print("The following are the values after swaping.")
+print(f"x = {x}")
+print(f"y = {y}")
