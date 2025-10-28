@@ -1,0 +1,15 @@
+import random
+x = []
+l = int(input("Enter the number of sides of dice: "))
+for i in rage(0, l-1):
+    x.append(i+1)
+count = []*l
+s = int(input("Enter the sample size"))
+for j in range(s):
+    y = random.choice(x)
+    if y =
+
+
+
+
+#i am struck here. clue me in
