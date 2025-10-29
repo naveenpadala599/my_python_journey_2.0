@@ -1,0 +1,3 @@
+k=int(input("Enter the number of kilometers: "))
+m=k*0.621371
+print(f"{k} kilometers is {m} miles")
