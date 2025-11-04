@@ -1,0 +1,7 @@
+n=int(input("Enter the number to which factorial is to be found: "))
+def factorial(x):
+    if x==1:
+        return 1
+    else:
+        return  x*factorial(x-1)
+print(factorial(n)) 
