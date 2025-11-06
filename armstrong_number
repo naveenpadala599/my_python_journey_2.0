@@ -1,0 +1,24 @@
+n = int(input("Enter the number: "))
+
+# Count digits
+l = 0
+t = n
+while t != 0:
+    l += 1
+    t = t // 10
+
+# Reset t to original number
+t = n
+s = 0
+
+# Calculate armstrong sum
+for i in range(l):
+    digit = t % 10
+    s += digit ** l
+    t = t // 10
+
+# Final check
+if s == n:
+    print(f"{n} is an armstrong number.")
+else:
+    print(f"{n} is not an armstrong number.")
