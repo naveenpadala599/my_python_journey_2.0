@@ -1,0 +1,16 @@
+n=int(input("Enter the number: "))
+c=0
+t=n
+while t!=0:
+    c+=1
+    t=t//10
+t=n    
+s=0
+for i in range(0,c):
+    d=t%10
+    t=t//10
+    s=s+(d**c)
+if s==n:
+    print(f"{n} is an armstorng number.")
+else:
+    print(f"{n} is not an armstorng number.")
