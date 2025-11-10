@@ -1,0 +1,8 @@
+n=int(input("Enter the number: "))
+s=0
+t=n
+for i in range(0,len(str(n))):
+    d=t%10
+    s=s+d
+    t=t//10
+print(f"The sum of all the digits in {n} is {s}")
