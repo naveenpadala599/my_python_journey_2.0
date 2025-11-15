@@ -1,0 +1,5 @@
+my_list=[]
+for i in range(1,101):
+    my_list.append(i)
+three_divisibles=list(filter(lambda x: x%3==0, my_list))
+print(three_divisibles)
