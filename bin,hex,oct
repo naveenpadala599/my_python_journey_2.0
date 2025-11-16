@@ -1,0 +1,2 @@
+n=int(input("Enter the number: "))
+print(bin(n),"is binary of",n," \n", oct(n),"is octal of",n, "\n", hex(n),"is hexal of",n)
