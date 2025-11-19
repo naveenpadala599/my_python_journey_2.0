@@ -1,7 +1,7 @@
 n=int(input('Enter the number: '))
 y=0
 k=[]
-while n>1:
+while n>0:
      y=n%2
      n=n//2
      k.append(y)
