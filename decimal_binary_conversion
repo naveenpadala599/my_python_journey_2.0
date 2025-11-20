@@ -1,0 +1,14 @@
+n=int(input('Enter the number: '))
+y=0
+k=[]
+while n>0:
+     y=n%2
+     n=n//2
+     k.append(y)
+l=[]
+for j in range(len(k)-1,-1,-1):
+    l.append(k[j])
+s=''
+for a in l:
+    s=s+str(a)
+print(s) 
