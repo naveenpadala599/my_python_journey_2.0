@@ -1,0 +1,12 @@
+dec=int(input("Enter the decimal number: "))
+if dec==0:
+    print(0)
+    exit()
+rev_octs=[]
+new_dec=dec
+while new_dec>0:
+    rev_octs.append(new_dec%8)
+    new_dec=new_dec//8
+octs=rev_octs[::-1]
+oct="".join(str(i) for i in octs)
+print(oct)
