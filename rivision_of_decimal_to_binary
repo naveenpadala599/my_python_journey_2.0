@@ -1,0 +1,12 @@
+dec=int(input("Enter the decimal number: "))
+if dec==0:
+    print(0)
+    exit()
+rev_bits=[]
+new_dec=dec
+while new_dec>0:
+    rev_bits.append(new_dec%2)
+    new_dec=new_dec//2
+bits=rev_bits[::-1]
+bin="".join(str(i) for i in bits)
+print(bin)
