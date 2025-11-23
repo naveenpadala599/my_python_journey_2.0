@@ -1,0 +1,28 @@
+dec=int(input("Enter the number: "))
+if dec==0:
+    print(0)
+    exit()
+new_dec=dec
+rev_bits=[]
+while(new_dec>0):
+    rev_bits.append(new_dec%16)
+    new_dec//=16
+bits=rev_bits[::-1]
+print(bits)
+for i in range(len(bits)):
+    if bits[i]<10 and bits[i]>-1:
+        continue
+    elif bits[i]==10:
+        bits[i]='A'
+    elif bits[i]==11:
+        bits[i]='B'
+    elif bits[i]==12:
+        bits[i]='C'
+    elif bits[i]==13:
+        bits[i]='D'
+    elif bits[i]==14:
+        bits[i]='E'
+    elif bits[i]==15:
+        bits[i]='F'
+print(bits) 
+print(''.join([str(i)for i in bits]))
