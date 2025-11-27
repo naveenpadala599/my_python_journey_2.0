@@ -1,0 +1,10 @@
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+n1,n2=a,b
+while b != 0:
+    a, b = b, a % b
+
+print(a)
+hcf=a
+lcm=(n1*n2)/hcf
+print(lcm)
