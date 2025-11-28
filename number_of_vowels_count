@@ -1,0 +1,9 @@
+s=input("Enter the string: ")
+v=["a","e","i","o","u","A","E","I","O","U"]
+c=0
+for i in s:
+    for j in v:
+        if i==j:
+            c+=1
+            break
+print(c) 
