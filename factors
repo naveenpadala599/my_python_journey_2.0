@@ -1,0 +1,12 @@
+n=int(input("Enter a number: "))
+fac=[]
+for i in range(1,int((n)**(1/2)+1)):
+    if n%i==0:
+        fac.append(i)
+l=len(fac)        
+for i in range(l):
+    if n//fac[i] in fac:
+        continue
+    else:
+        fac.append(n//fac[i])
+print(fac)
