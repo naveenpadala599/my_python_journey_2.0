@@ -1,0 +1,16 @@
+num1=int(input("Enter the first number: "))
+num2=int(input("Enter the second number: "))
+op=input("Enter 'add' if you want to add the numbers\n""Enter 'sub' if you want to subtract the numbers.\n""Enter 'mult' if you want to multiplicate the two numbers.\n""Enter 'div' if you want to divide the two numbers.\n""Enter your choice: ")
+if op=="add":
+    print(f"The value of {num1} + {num2} is {num1+num2}")
+elif op=="sub":
+    print(f"The value of {num1} - {num2} is {num1-num2}")  
+elif op=="mult":
+    print(f"The value of {num1} * {num2} is {num1*num2}")
+elif op=="div":
+    if num2==0:
+        print("Cannot divide by zero.")
+    else:    
+        print(f"The value of {num1} / {num2} is {num1/num2}")  
+else:
+    print("The input is invalid.")
