@@ -1,0 +1,7 @@
+import itertools,random
+a=range(1,14)
+b=["spade","heart","diamond","club"]
+deck=list(itertools.product(a,b))
+random.shuffle(deck)
+for i in range(5):
+    print(deck[i])
