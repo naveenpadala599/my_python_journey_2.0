@@ -1,0 +1,7 @@
+def sumn(n):
+    if n==1:
+        return 1
+    else:
+        return n+sumn(n-1)
+m=int(input("Enter the number: "))   
+print(sumn(m))
