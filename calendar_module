@@ -1,0 +1,4 @@
+import calendar
+m=1
+y=1998
+print(calendar.month(y,m))
