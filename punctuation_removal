@@ -1,0 +1,7 @@
+punt='''~`!@#$%^&*()_-[]\\|}{;'":,./?><'''
+s="Hello!!!, he said ---and went."
+ns=""
+for i in s:
+    if i not in punt:
+        ns=ns+i
+print(ns)  
