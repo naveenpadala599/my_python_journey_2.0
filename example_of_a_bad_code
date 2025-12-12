@@ -1,0 +1,4 @@
+def make_dict(*args):
+    x,y=args
+    return dict(**locals())
+print(make_dict(1, 2))
