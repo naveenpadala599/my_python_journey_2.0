@@ -1,0 +1,10 @@
+s = "Hello this Is an Example With cased letters"
+bsort=[]
+str1=''
+for i in range(len(s)):
+    j=i
+    if j==0:
+        while j<len(s) and s[j]!=" ":
+            str1+=s[j]
+            j+=1
+print(str1) 
