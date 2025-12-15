@@ -1,0 +1,41 @@
+s = "Hello this Is an Example With cased letters"
+bsort=[]
+for i in range(len(s)):
+    str1=''
+    j=i
+    if j==0:
+        while j<len(s) and s[j]!=" ":
+            str1+=s[j]
+            j+=1
+        bsort.append(str1)
+    elif s[i]==" ":
+        j=i
+        k=1
+        while j+k<len(s) and s[j+k]!=" ":
+            str1+=s[j+k]
+            k+=1
+        bsort.append(str1)    
+print(bsort)  
+a=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+d={}
+v=1
+for l in a:
+    d[l]=v
+    v+=1
+print(d) 
+bsortl=[]
+for m in bsort:
+    bsortl.append(m[0])
+print(bsortl)
+bsortld={}
+for b in bsortl:
+    bsortld[b]=d[b.lower()]
+print(bsortld) 
+dpairs={}
+for c in bsort:
+    dpairs[c.lower()]=bsortld[c[0].lower()]
+print(dpairs) 
+
+dpairs={}
+for c in bsort:
+    dpairs[c.lower()] = d[c[0].lower()]
