@@ -1,0 +1,13 @@
+lines = 0
+words = 0
+characters = 0
+
+with open("hello.txt", "r") as f:
+    for line in f:
+        lines += 1
+        words += len(line.split())
+        characters += len(line.strip())
+
+print("Lines:", lines)
+print("Words:", words)
+print("Characters:", characters)
