@@ -1,0 +1,12 @@
+s="My age is 27 years"
+letters=0
+digits=0
+spaces=0
+for i in s:
+    if i.lower() in "abcdefghijklmnopqrstuvwxyz":
+        letters+=1
+    elif i in "1234567890":
+        digits+=1
+    elif i in " ":
+        spaces+=1
+print({"letters":letters, "digits":digits, "spaces":spaces})   
