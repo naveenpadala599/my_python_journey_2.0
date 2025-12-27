@@ -1,0 +1,12 @@
+n=int(input("Enter the number: "))
+k=n
+p=0
+d=[]
+while k!=0:
+    d.append(k%10)
+    k=k//10
+nr=0    
+for i in d:
+    nr=nr*10+i
+    
+print(nr)   
