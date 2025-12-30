@@ -1,0 +1,7 @@
+n=int(input("Enter the number of numbers: "))
+lst=[]
+for i in range(n):
+    lst.append(int(input(f"Enter the {i+1}th number: ")))
+m=max(lst)
+lst.remove(m)
+print(max(lst))
