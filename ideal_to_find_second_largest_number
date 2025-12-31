@@ -1,0 +1,17 @@
+n = int(input("Enter how many numbers: "))
+lst = []
+
+for i in range(n):
+    lst.append(int(input(f"Enter number {i+1}: ")))
+
+largest = float('-inf')
+second = float('-inf')
+
+for num in lst:
+    if num > largest:
+        second = largest
+        largest = num
+    elif num != largest and num > second:
+        second = num
+
+print("Second largest number:", second)
