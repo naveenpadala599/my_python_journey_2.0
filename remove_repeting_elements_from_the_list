@@ -1,0 +1,8 @@
+lst=[]
+for i in range(10):
+    lst.append(int(input("Enter the numbers: ")))
+nlst=[]
+for i in lst:
+    if i not in nlst:
+        nlst.append(i)
+print(nlst)        
