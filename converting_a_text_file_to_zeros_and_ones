@@ -1,0 +1,6 @@
+with open("body.txt", "rb") as f:
+    data = f.read()
+
+for byte in data:
+    print(byte)
+    print(format(byte, "08b"))
