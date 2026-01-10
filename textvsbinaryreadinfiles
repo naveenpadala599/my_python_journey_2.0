@@ -1,0 +1,9 @@
+def textvsbinary(filename):
+    with open(filename,"r") as f:
+        print("text mode read:",f.read(3))
+    with open(filename,"rb") as f:
+        print("binary mode read:")
+        d=f.read(3)
+        for byte in d:
+            print(format(byte,"08b"))
+textvsbinary("body.txt")        
