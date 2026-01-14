@@ -1,0 +1,10 @@
+def read_in_chunks(filename, size):
+    with open(filename, "rb") as f:
+        while True:
+            chunk=f.read(size)
+            if chunk==b"":
+                break
+            print("read",len(chunk),"bytes")
+            print(chunk)
+read_in_chunks("body.txt",4)            
+        
