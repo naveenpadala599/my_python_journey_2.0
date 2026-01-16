@@ -1,0 +1,11 @@
+import hashlib
+h=hashlib.sha1()
+print("initial hash:",h.hexdigest())
+h.update(b"Hello")
+print("after'Hello':",h.hexdigest())
+h.update(b" ")
+print("after space:",h.hexdigest())
+h.update(b"world")
+print("after world:",h.hexdigest())
+
+
