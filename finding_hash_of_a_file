@@ -1,0 +1,13 @@
+import hashlib
+def hash_file(filename):
+    h=hashlib.sha1()
+    with open(filename,"rb") as f:
+        chunk=0
+        while chunk!=b"":
+            chunk=f.read(1024)
+            h.update(chunk)
+    return h.hexdigest()
+print(hash_file("body.txt"))    
+        
+        
+        
