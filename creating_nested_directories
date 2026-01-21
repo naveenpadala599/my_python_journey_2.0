@@ -1,0 +1,4 @@
+from pathlib import Path
+p=Path("project/data/images")
+p.mkdir(parents=True, exists_ok=True)
+print("created:", p)
