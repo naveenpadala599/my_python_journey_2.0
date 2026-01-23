@@ -1,0 +1,9 @@
+import os
+
+p = "file/diraa/dirb"
+
+if os.path.exists(p):
+    print("directories already exists")
+else:
+    os.makedirs(p)
+    print("directories created")
