@@ -1,0 +1,9 @@
+import os
+p="files/dira/dirb"
+if os.path.isfile(p):
+    print("dirb is a file")
+elif os.path.isdir(p):
+    print("dirb is a directory")
+else:
+    print("path dosent exist")
+    
