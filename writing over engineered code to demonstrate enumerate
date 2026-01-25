@@ -1,0 +1,8 @@
+my_list = [21, 44, 35, 11]
+
+print("[", end="")
+for index, item in enumerate(my_list):
+    print(item, end="")
+    if index != len(my_list) - 1:
+        print(",", end="")
+print("]")
