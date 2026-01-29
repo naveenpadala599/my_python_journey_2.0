@@ -1,0 +1,4 @@
+dt = {'a': 'juice', 'b': 'grill', 'c': 'corn'}
+for k,v in dt.items():
+    print(k,v)
+    
