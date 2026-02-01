@@ -1,0 +1,3 @@
+list=[]
+if not list and not len(list) and list==[]:
+    print("The list is empty")
