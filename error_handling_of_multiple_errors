@@ -1,0 +1,6 @@
+s=input(":")
+n=int(input(":"))
+try:
+    sum=s+n
+except (TypeError, ValueError):
+    print("Error")
