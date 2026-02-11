@@ -1,0 +1,8 @@
+import os
+for file in os.listdir("test_downloads"):
+    path=os.path.join("test_downloads",file)
+    if os.path.isfile(path):
+        name,ext=os.path.splitext(file)
+        if ext.lower()==".jpg":
+            os.makedirs("test_downloads/images",exist_ok=True)
+            print(f"image:{file}")
