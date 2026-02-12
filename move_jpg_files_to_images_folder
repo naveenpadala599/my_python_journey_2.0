@@ -1,0 +1,8 @@
+import os
+import shutil
+os.makedirs("test_downloads/images", exist_ok=True)
+for file in os.listdir("test_downloads"):
+    if os.path.isfile(os.path.join("test_downloads", file)):
+        name, ext = os.path.splitext(file)
+        if ext.lower()==".jpg":
+            shutil.move(os.path.join("test_downloads", file), os.path.join("test_downloads/images",file))
