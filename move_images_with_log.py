@@ -1,0 +1,11 @@
+import os
+import shutil
+os.makedirs("test_downloads/images", exist_ok=True)
+for file in os.listdir("test_downloads"):
+    if os.path.isfile(os.path.join("test_downloads",file)):
+        name,ext=os.path.splitext(file)
+        if ext.lower() in {".jpg",".png",".jpeg"}:
+            shutil.move(os.path.join("test_downloads",file),os.path.join("test_downloads/images",file))
+            with open("log.txt","a") as log:
+                log.write(f"moved {file} to images folder\n")
+                
