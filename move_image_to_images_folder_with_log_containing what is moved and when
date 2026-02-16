@@ -1,0 +1,12 @@
+import os
+import shutil
+import time
+os.makedirs("test_downloads/images", exist_ok=True)
+for file in os.listdir("test_downloads"):
+    if os.path.isfile(os.path.join("test_downloads",file)):
+        name,ext=os.path.splitext(file)
+        if ext.lower() in {".jpg",".png",".jpeg"}:
+            shutil.move(os.path.join("test_downloads",file),os.path.join("test_downloads/images",file))
+            timestamp=os.path.getmtime(os.path.join("test_downloads/images",file))
+            with open("log.txt","a") as log:
+                log.write(f"{file} is moved to images folder on {time.ctime(timestamp)}\n")
