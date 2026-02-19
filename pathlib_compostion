@@ -1,0 +1,2 @@
+from pathlib import Path
+print("composed path:", Path.cwd()/"data/info.txt")
