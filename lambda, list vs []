@@ -1,0 +1,8 @@
+from functools import reduce
+l=[1,2,3,4]
+print([x*x for x in l ])
+print(list(x*x for x in l))
+print(list(map(lambda x:x*x, l)))
+print([map(lambda x:x*x, l)])
+print(reduce(lambda x,y:x+y, l))
+print(list(filter(lambda x: x*x%2==0, l)))
