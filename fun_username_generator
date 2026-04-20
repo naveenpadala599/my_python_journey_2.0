@@ -1,0 +1,5 @@
+import random
+name=input("Enter your name: ")
+name=name.strip().lower()
+username=name[0]+name[1]+name[2]+name[-3]+name[-2]+name[-1]+str(random.randint(10,99))
+print(f"Your username is {username}")
